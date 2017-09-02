@@ -1,0 +1,716 @@
+/* Fonts for logo */
+@font-face {
+    font-family: ekmukta;
+    font-weight: bold;
+    src: url(../fonts/ekmukta-bold.ttf);
+}
+
+@font-face {
+    font-family: ekmukta;
+    font-weight: normal;
+    src: url(../fonts/ekmukta-regular.ttf);
+}
+
+/* Fonts for headings */
+@font-face {
+    font-family: trueno;
+    font-weight: 900;
+    src: url(../fonts/truenoexbd.otf);
+}
+
+@font-face {
+    font-family: trueno;
+    font-weight: bold;
+    src: url(../fonts/truenobd.otf);
+}
+
+@font-face {
+    font-family: trueno;
+    font-weight: 600;
+    src: url(../fonts/truenosbd.otf);
+}
+
+@font-face {
+    font-family: trueno;
+    font-weight: normal;
+    src: url(../fonts/truenorg.otf);
+}
+
+@font-face {
+    font-family: trueno;
+    font-weight: 300;
+    src: url(../fonts/truenolt.otf);
+}
+
+@font-face {
+    font-family: trueno;
+    font-weight: 200;
+    src: url(../fonts/truenoultlt.otf);
+}
+
+/* Document styles */
+html, body {
+    color: #4A4A4A;
+    font-size: 14px;
+    font-family: trueno, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    letter-spacing: normal;
+    margin: 0;
+}
+
+body, header {
+    width: 1233px;
+    margin: auto;
+}
+
+/* Header styles */
+header {
+    height: 64px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    background-color: white;
+}
+
+/* Logo image and text */
+.logo {
+    display: flex;
+    flex-grow: 1;
+    height: 50%;
+    align-items: center;
+    font-family: ekmukta, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    margin-left: 24px;
+    font-size: 1.4rem;
+    color: #9B9B9B;
+    letter-spacing: 1px;
+}
+
+/* Colmar text only */
+span.colmar {
+    font-weight: bold;
+    color: #4A4A4A;
+    padding-left: 2px;
+}
+
+/* Navigation links */
+nav {
+    margin-right: 24px;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-family: Arial;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+/* Hide icons for desktop */
+img.nav-icon {
+    display: none;
+}
+
+/* Page content */
+main {
+    padding-top: 64px;
+    position: relative;
+    margin: auto; /* centers in page */
+}
+
+/* Each major section on page */
+section {
+    padding: 32px 0 32px 24px;
+}
+
+h1, h2, h3, h4, h5 {
+    display: block;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 32px 0;
+}
+
+h3 {
+    font-size: 1.6rem;
+    padding: 24px 0;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+p {
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+/* Banner section */
+section.banner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #D8D8D8;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+section.banner .img-container {
+    width: 60%;
+}
+
+section.banner .img-container img {
+    width: 100%;
+}
+
+div.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+    margin: auto;
+}
+
+p.start {
+    background-color: #4A4A4A;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+    max-width: 80%;
+    margin: 0;
+}
+
+/* Information section */
+section.information {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 0 24px;
+}
+
+/* Image and text on the left */
+div.information-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 32px 24px 32px 0;
+}
+
+.information-main > .img-container {
+    width: 100%;
+    height: 303px;
+    background-image: url("../images/information-main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Title under image */
+.information-main h2 {
+    padding: 32px 0 24px;
+    font-size: 2.6rem;
+}
+
+.information-main p {
+    margin: 0 0 32px;
+    font-weight: 300;
+}
+
+/* Bolden this a little bit */
+p.cited-author {
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Item container on the right */
+section.information .information-items {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #E0E2E2;
+    margin-right: 0;
+    padding: 16px 0 32px;
+}
+
+/* Each item */
+.information-item {
+    display: flex;
+    padding-bottom: 16px;
+    padding: 16px 0 16px 16px;
+}
+
+/* Border under the first item */
+.information-item:first-child {
+    border-bottom: 1px solid #E0E2E2;
+}
+
+.information-item .img-container {
+    width: 35%;
+    height: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-height: 100%;
+}
+
+/* Square images */
+.img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Grey background for Guest lecture */
+#guest-lecture, #fisma {
+    background-color: #D8D8D8;
+}
+
+/* Text content to the right of small images */
+.info-item-text-content {
+    width: 65%;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-item-text-content p {
+    margin: 8px 0;
+    font-family: Arial;
+}
+
+.info-item-text-content p:last-child {
+    margin-bottom: 16px;
+}
+
+/* Make this blue */
+.info-item-read-more a {
+    color: #5194E3;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+/* Hide mobile images */
+.img-mobile {
+    display: none;
+}
+
+/* Start Learning section */
+section.learning {
+    display: block;
+    padding: 32px 72px;
+    background-color: #EAEBEC;
+}
+
+/* Title of the section */
+h2.section-title {
+    padding-top: 0;
+    padding-bottom: 32px;
+    margin: auto;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+/* Container for the 6 topic divs */
+div.topics {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+/* Each topic container */
+div.topic-item {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 24px 0;
+    margin-bottom: 32px;
+    max-width: 341px;   /* Limit for desktop to wrap nicely */
+    background-color: white;
+}
+
+/* Margins for middle divs */
+div.topic-item:nth-child(3n+2) {
+    margin: 0 32px;
+    margin-bottom: 32px;
+}
+
+img.topic-image {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+h4.topic-title {
+    padding: 16px 16px 0;
+    font-size: 1.8rem;
+}
+
+/* Display COURSES after each topic title */
+h4.topic-title::after {
+    content: 'courses';
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 16px 0 0;
+    color: #767676;
+}
+
+p.topic-description {
+    line-height: 1.6;
+    padding: 8px 16px 0 16px;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #767676;
+    font-weight: 300;
+}
+
+/* Thesis exhibit section */
+section.thesis {
+    padding: 32px 0 0 24px;
+}
+
+/* Subsection for layout */
+section.thesis section {
+    padding-left: 0;
+}
+
+/* Left side content */
+section.thesis .information-main {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Right side content */
+section.thesis .information-items {
+    padding-top: 0;
+    border: none;
+}
+
+div.video-container {
+    width: 100%;
+    margin-bottom: 24px;
+    position: relative; /* To display play button on top */
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #CCCCCD;
+}
+
+/* Overlay the play button in the middle of the video */
+#video-play {
+    position: absolute;
+    top: 42.5%;
+    left: 45%;
+    background-color: #9B9B9B;
+    color: white;
+    padding: 2.5% 5%;
+    border-radius: 8%;
+    border: none;
+}
+
+/* Looks like a button */
+#video-play:hover {
+    cursor: pointer;
+}
+
+.information-main h4 {
+    padding-bottom: 8px;
+}
+
+/* Matching text color to spec */
+section.thesis .information-main p, section.thesis .info-item-text-content p {
+    color: #767676;
+}
+
+/* Footer */
+footer {
+    padding: 16px 24px;
+    margin-bottom: 48px;
+    font-family: Arial;
+    color: #767676;
+}
+
+footer p, footer nav, footer nav ul, footer nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav {
+    float: right;
+    margin-right: 24px;
+}
+
+footer nav a {
+    color: inherit;
+    padding: 0 8px;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+    html, body {
+        width: 100vw;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    header, main, footer {
+        width: 100%;
+    }
+
+    /* Hide logo text */
+    span.logo-text {
+        display: none;
+    }
+
+    /* Expand icons */
+    header nav {
+        flex-grow: 2;
+        height: 100%;
+        margin-right: -24px;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 54px 0 0;
+        height: 100%;
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        padding: 0;
+        margin: auto 0;
+    }
+
+    /* Hide third menu item */
+    header nav ul li:nth-child(3) {
+        display: none;
+    }
+
+    header nav ul li a {
+        height: 100%;
+    }
+
+    img.nav-icon {
+        display: table-cell;
+        flex-grow: 1;
+        width: 32px;
+        height: 32px;
+    }
+
+    /* Hide link text, icons only */
+    span.nav-text {
+        display: none;
+    }
+
+    h1 {
+        padding: 0;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding: 0;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    p.start {
+        background-color: #9B9B9B;
+        font-weight: normal;
+    }
+
+    section.banner {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    section.banner .img-container {
+        width: 100%;
+        background-size: 100% auto;
+    }
+
+    div.banner-content {
+        padding-bottom: 8px;
+    }
+
+    div.banner-content h1 {
+        margin: 32px auto;
+    }
+
+    p.start {
+        margin: 24px 0;
+        max-width: 100%;
+        padding: 8px 0;
+    }
+
+    section.information {
+        padding: 0;
+    }
+
+    section.information .information-main {
+        display: none;
+    }
+
+    section.information .information-items {
+        width: 100%;
+        border-left: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .information-item {
+        padding: 16px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .information-item:first-child {
+        border-bottom: none;
+    }
+
+    .information-item .img-container {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    /* Hide images for desktop only */
+    .img-desktop {
+        display: none;
+    }
+
+    /* Display mobile images */
+    .img-mobile {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+    }
+
+    .info-item-text-content {
+        padding: 16px;
+        width: 90%;
+    }
+
+    /* Remove grey background */
+    #guest-lecture {
+        background-color: white;
+        margin-bottom: 0;
+    }
+
+    h2.section-title {
+        font-size: 2.5rem;
+    }
+
+    section.learning {
+        padding: 32px 16px;
+        background-color: white;
+        border: 1px solid #EAEBEC;
+    }
+
+    section.learning h2 {
+        padding-bottom: 16px;
+    }
+
+    .topic-item img, .topic-item p {
+        display: none;
+    }
+
+    h4.topic-title {
+        padding: 0;
+    }
+
+    /* Hide extra info */
+    h4.topic-title::after{
+        display: none;
+    }
+
+    .topics {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    /* Add background to the topic divs */
+    .topic-item {
+        padding: 24px 16px !important;
+        margin: 8px 0 0 !important;
+        background-color: #EAEBEC !important;
+        max-width: 100% !important;
+    }
+
+    section.thesis {
+        padding: 32px 0 0;
+    }
+
+    section.thesis h2 {
+        padding-bottom: 16px;
+    }
+
+    section.thesis .information-items {
+        display: none;
+    }
+
+    section.thesis .information-main {
+        display: block;
+        margin: 0;
+    }
+
+    section.thesis .information-main h4, section.thesis .information-main p {
+        display: none;
+    }
+
+    footer {
+        margin: 0;
+        color: #4A4A4A;
+    }
+
+    footer nav {
+        display: none;
+    }
+
+    #video-play {
+        left: 42.5%;
+    }
+}
